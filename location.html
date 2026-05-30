@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - Smart Park</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/location.css">
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">Smart Auto</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="location.html" class="active">Location</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Find Us Here</h2>
+        <div class="location-container">
+            <div class="address">
+                <h3>Smart Auto Main Branch</h3>
+                <p>1234 Parking Lane, Auto City, XYZ 56789</p>
+                <p><strong>Phone:</strong> +1 234-567-890</p>
+                <p><strong>Email:</strong> support@autopark.com</p>
+                <button onclick="openGoogleMaps()">Get Directions</button>
+            </div>
+
+            <div class="map">
+                <iframe id="googleMap" width="600" height="450" style="border:0;" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; A&S Foundation 2025</p>
+    </footer>
+
+    <script src="JS/location.js"></script>
+</body>
+</html>
